@@ -7,7 +7,7 @@ Actualmente me encuentro incursionando en el desarrollo de aplicaciones android 
 Más detalles en [LinkedIn](https://www.linkedin.com/in/cristhian-mayuri-quiroz-59018520/).
 
 ## Finalidad
-La finalidad de este foro es poder compartir con todo aquel que este interesado, algo de mi experiencia en programación, ya sea desde una consulta hasta una oportunidad laboral.
+La finalidad de este blog es poder compartir con todo aquel que este interesado, algo de mi experiencia en programación, ya sea desde una consulta hasta una oportunidad laboral.
 
 ## Proyectos en GitHub
 Como muchos saben github es hoy por hoy el mejor (o más popular al menos) sistema de control de cambios y versiones. Dentro de [Mi perfil](https://github.com/mayuelcuarto) en esta plataforma podrás encontrar contenido interesante sobre distintos proyectos.
