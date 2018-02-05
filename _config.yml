@@ -1,6 +1,7 @@
 theme: jekyll-theme-architect
-title: [Cristhian Mayuri]
-description: [Web-blog perteniciente a Cristhian Mayuri]
+title: Cristhian Mayuri
+description: Web-blog perteniciente a Cristhian Mayuri
+show_downloads: true
 github:
   zip_url: http://example.com/download.zip
   another_url: another value
