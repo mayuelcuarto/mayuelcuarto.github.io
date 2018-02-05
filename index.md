@@ -1,4 +1,4 @@
-# Bienvenido al Foro de Cristhian Mayuri Quiroz
+# Bienvenido
 
 ## Sobre mí
 Soy peruano, mi grado de instrucción es de Técnico en Computación e Informática, cuento con alrededor de 10 años de experiencia (gran parte de ellos en una Intitución) en temas de desarrollo de Sistemas y Software.<br>
