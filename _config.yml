@@ -2,3 +2,4 @@ theme: jekyll-theme-architect
 title: Cristhian Mayuri
 description: Web-blog perteniciente a Cristhian Mayuri
 site.github.is_project_page: true
+site.github.is_user_page: false
