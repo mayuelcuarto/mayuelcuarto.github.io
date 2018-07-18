@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sección de tecnología del Blog del Mayu">
+    <meta name="author" content="Cristhian Daniel Mayuri Quiroz">
+    <!--<link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>El Blog del Mayu (Tecnología)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114212934-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114212934-1');
+    </script>
+
+  </head>
+
+  <body style="background-color:#e0f2f1">
+
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="align-items-center">
+          <div class="text-center">
+              <span class="blog-header-logo text-dark"><a href="index.html">El Blog del Mayu</a></span><br><br>
+              <strong class="d-inline-block mb-2 text-primary">(Tecnología)</strong>
+          </div>
+        </div>
+      </header>
+    
+       <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="tecnologia.html">Tecnología</a>
+          <a class="p-2 text-muted" href="videojuegos.html">Videojuegos</a>
+        </nav>
+      </div>
+      
+    </div>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+        <div class="blog-post"><a name="symfony" id="symfony">
+            <h2 class="blog-post-title">Configuración de Proyecto Symfony</h2></a>
+            <p class="blog-post-meta">Febrero 13, 2018 por <a href="https://www.linkedin.com/in/cristhian-mayuri-quiroz/">Cristhian Mayuri</a></p>
+            <p class="text-justify">Hola de nuevo, como comente en el post de inauguración mi experiencia radica más que todo en el uso del lenguaje PHP, habiendo dicho esto comencemos.</p>
+            <p class="text-justify">Hoy en día saber programar haciendo uso de un Framework PHP es lo más requerido por las empresas de desarrollo web, el día de hoy te presento la configuración rápida del Framework Symfony.</p>
+            <p class="text-justify">En la <a target="_blank" href="https://symfony.com/doc/current/setup.html">documentación oficial de Symfony</a>, se nos proporciona una solución haciendo uso de Composer (esta es la que usaremos). </p>
+            <ul class="list-group">
+                <li class="list-group-item text-justify">Primero que nada requeriremos contar con un interprete PHP, para este fin te recomiendo instalar <a target="_blank" href="http://www.wampserver.com/en/">wamp</a>
+                    (este es un software que nos configurará Apache, PHP y MySql de una sola vez).</li>
+                <li class="list-group-item text-justify">Hecho lo anterior debemos descargar <a target="_blank" href="https://getcomposer.org/download/" >
+                        Composer</a>. Este programa se encarga de administrar de manera muy efectiva librerías de PHP. 
+                        La instalación de Composer en Windows consiste en dar siguiente a la mayoría de pasos, salvo al 
+                        que nos pide que asignemos nuestro interprete de PHP, en donde de haber instalado wamp asignaremos:<br><br>
+                        <img src="imagenes/composer.png" class="img-thumbnail"><br><br>
+                        Esta ruta puede cambiar en el directorio wamp que podría ser el de 32 bits en cuyo caso el nombre no 
+                        llevaría 64 sino "wamp" a secas y también en la versión de PHP, que a partir de algunas versiones atrás 
+                        ya incluye la versión 7.* de PHP (puedes asignar esta versión si deseas experimentar las características 
+                        más recientes de PHP).
+                </li>
+                <li class="list-group-item text-justify">Para confirmar que Composer se ha instalado correctamente ejecutaremos el siguiente comando en la consola: <code>composer -v</code>.<br>
+                    Obtendremos un resultado similar a este: <br><br>
+                    <img src="imagenes/composer_version.png" class="img-thumbnail"><br><br>
+                
+                    Pues bien, tenemos instalado wamp y composer, ahora procederemos a crear un Proyecto con Symfony.</li>
+                <li class="list-group-item text-justify">Para instalar Symfony debemos ubicarnos a través de la consola en el directorio de publicación de wamp:<br><br>
+                    
+                    <code>cd C:/wamp(64)/www</code><br><br>
+                    Una vez situados en la carpeta de publicación ejecutaremos el siguiente comando también en la consola:<br><br>
+                    <code>composer create-project symfony/framework-standard-edition nombreproyecto "3.*"</code><br><br>
+                    
+                    
+                    Ahora procederé a detallar un poco que hace este comando:<br>
+                    <ul>
+                        <li><span class="font-weight-bold">composer create-project:</span> Se encarga de invocar la función de creación de proyectos de Composer.</li>
+                        <li><span class="font-weight-bold">symfony/framework-standard-edition:</span> Es el directorio que le decimos a Composer que tome como base.</li>
+                        <li><span class="font-weight-bold">nombreproyecto:</span> Es el nombre y a la vez directorio del proyecto que vamos a crear.</li>
+                        <li><span class="font-weight-bold">"3.*":</span> Es la versión de Symfony que instalaremos el asterisco después del punto indica que puede ser cualquier versión arriba de la 3, también se podría omitir escribir este fragmento de código y así se instalaría la versión más reciente.</li>
+                    </ul><br>
+                    
+                    
+                    <img src="imagenes/symfonyproject1.png" class="img-thumbnail"><br><br>
+                    
+                    Si haz realizado los pasos correctamente empezará la instalación del Framework Symfony, desde ya te aviso que la primera instalación toma su tiempo. Pasado un rato la consola te pedirá que ingreses los datos de configuración del proyecto. Ya que esto es una prueba dejaremos todo por defecto (dar al ENTER y dejar en blanco).<br><br>
+                    
+                    <img src="imagenes/symfonyproject2.png" class="img-thumbnail"><br><br>
+                    
+                    Y ya está, hemos creado nuestro proyecto con el Framework Symfony. Como dice el título del artículo he tratado de crear la guía del caso más simple. Si deseas ver algunos ejemplos de proyectos algo más complejos de Symfony, puedes seguirme en mi perfil de <a href="https://github.com/mayuelcuarto">GitHub</a>, espero te haya servido y hasta la próxima.
+            </ul>
+        </div>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Acerca del sitio web</h4>
+            <p class="mb-0 text-justify">El blog del Mayu ha sido desarrollado con la finalidad de compartir mis experiencias en diversos campos durante mi día a día cotidiano.</p>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Sígueme también en:</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/mayuelcuarto">GitHub</a></li>
+              <li><a href="https://twitter.com/@mayuelcuarto">Twitter</a></li>
+              <li><a href="https://www.youtube.com/channel/UCPN6mJNFnR_e6an6ToTX4pg?view_as=subscriber">Youtube</a></li>
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Este sitio web fue desarrollado con <a href="https://getbootstrap.com/">Bootstrap</a></p>
+      <p>
+        <a href="#">Subir</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
